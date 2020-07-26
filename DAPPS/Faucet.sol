@@ -1,0 +1,35 @@
+pragma solidity ^0.6.0;
+
+contract Faucet {
+    address payable public owner;
+    uint256 sendAmount;
+
+    constructor() public payable {
+        owner = msg.sender;
+        sendAmount = 1 ether;
+    }
+
+    function getBalance() public view returns (uint) {
+         return address(this).balance;
+    }
+
+    function getWei() public {
+        msg.sender.transfer(sendAmount);
+    }
+
+    function sendWei(address payable toWhom) public {
+        toWhom.transfer(sendAmount);
+    }
+
+    function getSendAmount() public view returns (uint256) {
+        return sendAmount;
+    }
+
+    function killMe() public returns (bool) {
+        require(msg.sender == owner);
+        selfdestruct(owner);
+        return true;
+    }
+
+    receive() external payable {}
+}

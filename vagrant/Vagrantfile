@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     config.vm.box_download_checksum = "8012a4a04400f51677962ef0d4442b991ff01a8af9ac0865bd1a0ceb2feba5ec"
     config.vm.box_download_checksum_type = "sha256"
     # Change from "~/DAPPS" to an existing, and non-encrypted, folder on your host if the mount fails
-    dapps.vm.synced_folder "~/DAPPS", "/home/vagrant/DAPPS", nfs: false, nfs_udp: false, create: true
+    dapps.vm.synced_folder "~/eth-dev-course/DAPPS", "/home/vagrant/DAPPS", nfs: false, nfs_udp: false, create: true
     dapps.vm.network "private_network", type: "dhcp"
     dapps.vm.network :forwarded_port, guest: 8000, host: 8000, host_ip: "127.0.0.1"
     dapps.vm.network :forwarded_port, guest: 8545, host: 8545, host_ip: "127.0.0.1"

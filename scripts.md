@@ -1,3 +1,6 @@
+### run geth
+DAPPS/launch42.sh
+
 ### unlock
 personal.unlockAccount(eth.accounts[0])
 
@@ -10,4 +13,9 @@ eth.sendTransaction({
 })
 
 ### Attach to same geth instance from second terminal (w/out logs)
-$ geth attach ipc:/home/vagrant/.ethereum/net42/geth.ipc 
+geth attach ipc:/home/vagrant/.ethereum/net42/geth.ipc 
+
+
+### contract
+var deployTransactionObject = { from: eth.coinbase, data: "0x" + compiled.contracts[contractKey].bin, value: web3.toWei(1, "ether"), gas: 1000000 };
+faucet contract: 0x0504015afb7eea31dfbaffef2b8f9def50167e61
