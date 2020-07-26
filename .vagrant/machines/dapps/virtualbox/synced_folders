@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/DAPPS":{"nfs":false,"nfs_udp":false,"create":true,"guestpath":"/home/vagrant/DAPPS","hostpath":"/Users/matthewmasurka/DAPPS","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/matthewmasurka/eth-dev-course","disabled":false,"__vagrantfile":true}}}
