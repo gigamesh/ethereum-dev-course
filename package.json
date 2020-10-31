@@ -1,0 +1,25 @@
+{
+  "name": "eth-dev-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigamesh/ethereum-dev-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gigamesh/ethereum-dev-course/issues"
+  },
+  "homepage": "https://github.com/gigamesh/ethereum-dev-course#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-wallet": "^1.0.0",
+    "web3": "^1.2.11"
+  }
+}

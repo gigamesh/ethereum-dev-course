@@ -19,3 +19,14 @@ geth attach ipc:/home/vagrant/.ethereum/net42/geth.ipc
 ### contract
 var deployTransactionObject = { from: eth.coinbase, data: "0x" + compiled.contracts[contractKey].bin, value: web3.toWei(1, "ether"), gas: 1000000 };
 faucet contract: 0x0504015afb7eea31dfbaffef2b8f9def50167e61
+
+---------
+
+# INFURA
+## get balance 
+```
+curl -X POST \
+-H "Content-Type: application/json" \
+--data '{"jsonrpc": "2.0", "id": 1, "method": "eth_getBalance", "params": ["0x32F0904823e3b7D58B6CAE4B566d03fA889C3936", "latest"]}' \
+"https://ropsten.infura.io/v3/dc6f5f82858c47f88b1808a350e646cd"
+```
