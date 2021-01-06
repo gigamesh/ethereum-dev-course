@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/gigamesh/ethereum-dev-course#readme",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "ethereumjs-tx": "^2.1.2",
     "ethereumjs-wallet": "^1.0.0",
     "web3": "^1.2.11"
